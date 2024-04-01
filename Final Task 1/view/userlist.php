@@ -1,9 +1,9 @@
 <?php
     require_once('../model/userModel.php');
-    // if(!isset($_COOKIE['flag'])){
-    //     header('location: login.php');
-    // }
-    $users = getAlluser();
+    if(!isset($_COOKIE['flag'])){
+        header('location: login.php');
+    }
+    $users = getAllEmployee();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,14 +23,14 @@
             </tr>
             <?php for($i=0; $i<count($users); $i++){?>
             <tr>
-                <td><?php echo $users[$i]['uID']; ?></td>
-                <td><?php echo $users[$i]['name']; ?></td>
-                <td><?php echo $users[$i]['phone']; ?></td>
-                <td><?=$users[$i]['username'] ?></td>
-                <td><?=$users[$i]['password'] ?></td>
+                <td><?php echo $users[$i]['eID']; ?></td>
+                <td><?php echo $users[$i]['Name']; ?></td>
+                <td><?php echo $users[$i]['ContactNo']; ?></td>
+                <td><?=$users[$i]['Username'] ?></td>
+                <td><?=$users[$i]['Password'] ?></td>
                 <td>
-                    <a href="updateuser.php?id=<?=$attendees[$i]['uID']?>"> Edit </a> |
-                    <a href="deleteuser.php?id=<?=$attendees[$i]['uID']?>"> Delete </a> 
+                    <a href="editEmployee.php?eID=<?=$users[$i]['eID']?>"> Edit </a> |
+                    <a href="deleteEmployee.php?eID=<?=$users[$i]['eID']?>"> Delete </a> 
                 </td>
             </tr>
             <?php } ?>
