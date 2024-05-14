@@ -1,0 +1,61 @@
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #ff5733;
+    color: green;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+}
+
+h1 {
+    color: #ff5733;
+    text-align: center;
+}
+
+h2 {
+    color: #ff5733;
+}
+
+input[type="submit"] {
+    background-color: #ff5733;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+fieldset {
+    border: 2px solid #ff5733;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    color: #ff5733;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 2px solid #ff5733;
+    border-radius: 5px;
+}
+
+.back-btn a {
+    background-color: #ff5733;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn a:hover {
+    background-color: #ff8c66;
+}

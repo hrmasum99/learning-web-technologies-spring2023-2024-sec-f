@@ -1,0 +1,38 @@
+table {
+    width: 80%;
+    margin: 50px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+h1 {
+    color: #ff5733 ;
+    border: 1px solid black;
+}
+
+h2 {
+    color: #ff5733;
+}
+
+p {
+    color: #333;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #ff5733;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
